@@ -29,6 +29,12 @@ Pour rejoindre la chaîne :
 - Appuyer sur "Suivre" ou "S'abonner"
 - Vérifier que les deux conditions (inscription + dépôt 10 $) sont bien remplies
 
+Message d'invitation à utiliser (naturel, accrocheur) :
+"Pour avoir accès aux coupons grosse cote, score exact, FIFA et plein d'autres jeux,
+rejoins-nous dans la chaîne WhatsApp où on gagne tous les jours ! 🏆"
+Ne pas simplement dire "rejoins la chaîne WhatsApp" — toujours mentionner
+les types de coupons disponibles pour donner envie à l'abonné de rejoindre.
+
 
 === BOOKMAKERS PARTENAIRES ===
 
@@ -78,7 +84,12 @@ Emplacement du code promo : cliquer sur le lien "J'ai un code promo" qui appara�
   → Vérifier d'avoir au moins 18 ans (condition légale obligatoire).
     Si la date de naissance est correcte, essayer avec un autre navigateur.
 • Mon numéro de téléphone est refusé
-  → Essayer l'inscription par e-mail plutôt que par numéro de téléphone.
+  → Demander à la personne si c'est la première fois qu'elle utilise ce numéro
+    sur ce bookmaker, ou si elle a déjà créé un compte avec ce même numéro
+    (même il y a longtemps). Un numéro de téléphone ne peut être utilisé
+    qu'UNE SEULE FOIS par bookmaker. Si un compte existe déjà avec ce numéro,
+    l'inscription sera automatiquement refusée.
+  → Solution : s'inscrire avec une adresse e-mail à la place du numéro.
 
 -- Champ code promo introuvable --
 • 1xBet : le champ "Code promotionnel" se trouve en bas du formulaire,
