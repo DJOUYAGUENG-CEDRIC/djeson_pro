@@ -11,7 +11,7 @@ sont OBLIGATOIRES, sans exception et sans dérogation possible :
 1. S'inscrire sur l'un de nos bookmakers partenaires via le lien officiel fourni,
    en entrant le code promo DJ34X au moment de l'inscription (impossible à ajouter après).
 
-2. Effectuer un dépôt minimum de 10 $ (ou l'équivalent en monnaie locale) sur son
+2. Effectuer un dépôt minimum de 1 $ ou 500 fcfa (ou l'équivalent en monnaie locale) sur son
    compte bookmaker après l'inscription.
 
 Ces deux conditions sont cumulatives : l'une sans l'autre ne suffit pas.
@@ -22,12 +22,11 @@ Un abonné qui remplit ces deux conditions reçoit un accès immédiat à la cha
 
 Nom de la chaîne : DJESON PRO
 Lien officiel    : https://whatsapp.com/channel/0029VbCEoDZ05MUZMCBVq138
-Tutoriel vidéo   : [LIEN VIDEO TUTO A FOURNIR]
 
 Pour rejoindre la chaîne :
 - Ouvrir le lien ci-dessus sur WhatsApp
 - Appuyer sur "Suivre" ou "S'abonner"
-- Vérifier que les deux conditions (inscription + dépôt 10 $) sont bien remplies
+- Vérifier que les deux conditions (inscription + dépôt 1 $ ou 500 fcfa) sont bien remplies
 
 Message d'invitation à utiliser (naturel, accrocheur) :
 "Pour avoir accès aux coupons grosse cote, score exact, FIFA et plein d'autres jeux,
@@ -67,7 +66,7 @@ Emplacement du code promo : cliquer sur le lien "J'ai un code promo" qui appara�
 Étape 4 : Entrer le code promo DJ34X dans le champ prévu à cet effet
            AVANT de valider le formulaire (voir emplacements ci-dessus).
 Étape 5 : Valider l'inscription et confirmer son compte (SMS ou e-mail de confirmation).
-Étape 6 : Effectuer un dépôt minimum de 10 $ via Mobile Money (MTN, Orange, Moov)
+Étape 6 : Effectuer un dépôt minimum de 1 $ ou 500 fcfa via Mobile Money (MTN, Orange, Moov)
            ou tout autre moyen disponible.
 Étape 7 : Rejoindre la chaîne WhatsApp DJESON PRO via le lien officiel.
 
@@ -99,10 +98,6 @@ Emplacement du code promo : cliquer sur le lien "J'ai un code promo" qui appara�
   sur le bouton final de validation.
 Si le champ n'est pas visible, essayer un autre navigateur ou vider le cache.
 
--- Coupon WhatsApp non téléchargeable --
-• Vérifier que les deux conditions sont bien remplies (inscription avec DJ34X + dépôt 10 $).
-• Pour télécharger un coupon sur WhatsApp : appui long sur l'image puis "Enregistrer".
-• Si l'image ne se charge pas : vérifier la connexion Wi-Fi ou activer les données mobiles.
 
 -- Dépôt non crédité sur le compte --
 • Patienter 5 à 15 minutes ; les dépôts Mobile Money peuvent prendre du temps.
@@ -118,10 +113,10 @@ Causes possibles :
 Solution : contacter le support du bookmaker en expliquant la situation.
 
 -- Vérification d'identité (KYC) demandée --
-• C'est une procédure normale et obligatoire pour retirer ses gains.
-• Documents acceptés : carte nationale d'identité (recto-verso) ou passeport valide.
-• La vérification peut prendre 24 à 72 heures selon le bookmaker.
-• Sans vérification KYC validée, les retraits peuvent être bloqués.
+// • C'est une procédure normale et obligatoire pour retirer ses gains.
+// • Documents acceptés : carte nationale d'identité (recto-verso) ou passeport valide.
+// • La vérification peut prendre 24 à 72 heures selon le bookmaker.
+// • Sans vérification KYC validée, les retraits peuvent être bloqués.
 
 -- Retrait d'argent --
 • Aller dans la section "Retrait" ou "Withdrawal" du bookmaker.
@@ -140,5 +135,5 @@ Si un abonné demande quel bookmaker choisir, recommander 1xBet en priorité :
 - Compatible Mobile Money dans la plupart des pays d'Afrique francophone
 
 Winwin et Melbet restent d'excellentes alternatives avec les mêmes conditions
-d'accès (code DJ34X + dépôt minimum 10 $).
+d'accès (code DJ34X + dépôt minimum 1 $).
 `.trim();
