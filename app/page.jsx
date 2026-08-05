@@ -9,6 +9,13 @@ import ChatInput from '@/components/ChatInput';
 import { WELCOME_MESSAGE, AUDIO_URL } from '@/lib/config';
 import { sendMessage } from '@/services/chatApi';
 
+function getSessionId() {
+  const key = 'dj_session_id';
+  let id = sessionStorage.getItem(key);
+  if (!id) { id = crypto.randomUUID(); sessionStorage.setItem(key, id); }
+  return id;
+}
+
 export default function Page() {
   const [isDark, setIsDark] = useState(true);
   const [messages, setMessages] = useState([]);
@@ -17,6 +24,11 @@ export default function Page() {
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const bottomRef = useRef(null);
+  const sessionIdRef = useRef(null);
+
+  useEffect(() => {
+    sessionIdRef.current = getSessionId();
+  }, []);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -32,7 +44,7 @@ export default function Page() {
     setIsLoading(true);
 
     try {
-      const reply = await sendMessage(text, currentHistory.slice(-20));
+      const reply = await sendMessage(text, currentHistory.slice(-20), sessionIdRef.current);
       setMessages((prev) => [
         ...prev,
         { id: Date.now(), sender: 'assistant', text: reply },

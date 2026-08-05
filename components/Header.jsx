@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { PROFILE_IMAGE, ASSISTANT_NAME } from '@/lib/config';
 
 function SunIcon() {
@@ -19,10 +21,41 @@ function MoonIcon() {
   );
 }
 
-export default function Header({ isDark, onToggleTheme }) {
+function BurgerIcon() {
   return (
-    <header className="flex-shrink-0 flex items-center gap-3 px-4 py-3 bg-gray-900 dark:bg-gray-900 border-b border-gray-700 shadow-md z-10">
-      <div className="relative flex-shrink-0">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <rect y="2" width="18" height="2" rx="1" fill="currentColor"/>
+      <rect y="8" width="18" height="2" rx="1" fill="currentColor"/>
+      <rect y="14" width="18" height="2" rx="1" fill="currentColor"/>
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <line x1="1" y1="1" x2="15" y2="15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+      <line x1="15" y1="1" x2="1" y2="15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+  );
+}
+
+function LockIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+    </svg>
+  );
+}
+
+export default function Header({ isDark, onToggleTheme }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+
+  return (
+    <header className="shrink-0 flex items-center gap-3 px-4 py-3 bg-gray-900 border-b border-gray-700 shadow-md z-10 relative">
+      <div className="relative shrink-0">
         <img
           src={PROFILE_IMAGE}
           alt={ASSISTANT_NAME}
@@ -46,13 +79,51 @@ export default function Header({ isDark, onToggleTheme }) {
         </div>
       </div>
 
+      {/* Theme toggle */}
       <button
         onClick={onToggleTheme}
-        className="p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 transition-colors flex-shrink-0"
+        className="p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700 transition-colors shrink-0"
         aria-label="Changer le thème"
       >
         {isDark ? <SunIcon /> : <MoonIcon />}
       </button>
+
+      {/* Burger button */}
+      <button
+        type="button"
+        onClick={() => setMenuOpen((v) => !v)}
+        className="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl transition-colors text-gray-400 hover:text-white hover:bg-gray-700"
+        style={{ background: menuOpen ? 'rgba(22,163,74,0.12)' : undefined }}
+        aria-label="Menu"
+      >
+        {menuOpen ? <CloseIcon /> : <BurgerIcon />}
+      </button>
+
+      {/* Dropdown menu */}
+      {menuOpen && (
+        <div className="absolute top-full right-3 mt-2 w-52 rounded-xl overflow-hidden z-50 bg-gray-900 border border-gray-700 shadow-xl">
+          <button
+            type="button"
+            onClick={() => { setMenuOpen(false); router.push('/admin'); }}
+            className="flex items-center gap-3 w-full px-4 py-3 text-sm text-left text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
+          >
+            <span className="text-green-500"><LockIcon /></span>{' '}
+            Connexion Admin
+          </button>
+        </div>
+      )}
+
+      {/* Overlay to close menu */}
+      {menuOpen && (
+        <button
+          type="button"
+          aria-label="Fermer le menu"
+          className="fixed inset-0 z-40 cursor-default"
+          style={{ background: 'transparent', border: 'none' }}
+          onClick={() => setMenuOpen(false)}
+          onKeyDown={(e) => { if (e.key === 'Escape') setMenuOpen(false); }}
+        />
+      )}
     </header>
   );
 }
