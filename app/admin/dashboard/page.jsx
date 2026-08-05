@@ -21,6 +21,7 @@ function formatDate(dateStr) {
 export default function Dashboard() {
   const router = useRouter();
   const [stats, setStats] = useState(null);
+  const [dbError, setDbError] = useState(null);
   const [conversations, setConversations] = useState([]);
   const [total, setTotal] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -30,17 +31,26 @@ export default function Dashboard() {
   const PER_PAGE = 20;
 
   const fetchStats = async () => {
-    const res = await fetch('/api/admin/stats');
-    if (res.status === 401) { router.push('/admin'); return; }
-    setStats(await res.json());
+    try {
+      const res = await fetch('/api/admin/stats');
+      if (res.status === 401) { router.push('/admin'); return; }
+      const data = await res.json();
+      if (data.error) { setDbError(data.error); return; }
+      setStats(data);
+    } catch (e) {
+      setDbError(e.message);
+    }
   };
 
   const fetchConversations = async (offset = 0) => {
-    const res = await fetch(`/api/admin/conversations?limit=${PER_PAGE}&offset=${offset}`);
-    if (res.status === 401) { router.push('/admin'); return; }
-    const data = await res.json();
-    setConversations(data.conversations ?? []);
-    setTotal(data.total ?? 0);
+    try {
+      const res = await fetch(`/api/admin/conversations?limit=${PER_PAGE}&offset=${offset}`);
+      if (res.status === 401) { router.push('/admin'); return; }
+      const data = await res.json();
+      if (data.error) return;
+      setConversations(data.conversations ?? []);
+      setTotal(data.total ?? 0);
+    } catch { /* silent */ }
   };
 
   const openConversation = async (id) => {
@@ -81,6 +91,12 @@ export default function Dashboard() {
           <StatCard label="Aujourd'hui" value={stats?.todaySessions} sub="conversations" />
           <StatCard label="Aujourd'hui" value={stats?.todayMessages} sub="messages" />
         </div>
+
+        {dbError && (
+          <div className="rounded-xl px-4 py-3 bg-red-950 border border-red-800 text-red-300 text-xs font-mono break-all">
+            Erreur DB : {dbError}
+          </div>
+        )}
 
         <div className="flex gap-4" style={{ alignItems: 'flex-start' }}>
           <div className="flex-1 min-w-0 rounded-2xl overflow-hidden bg-gray-900 border border-gray-700">
