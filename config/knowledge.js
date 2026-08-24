@@ -9,7 +9,7 @@ Pour rejoindre la chaîne WhatsApp DJESON PRO et accéder aux pronostics, deux c
 sont OBLIGATOIRES, sans exception et sans dérogation possible :
 
 1. S'inscrire sur l'un de nos bookmakers partenaires via le lien officiel fourni,
-   en entrant le code promo DJ34X au moment de l'inscription (impossible à ajouter après).
+   en entrant le code promo DJ38X au moment de l'inscription (impossible à ajouter après).
 
 2. Effectuer un dépôt minimum de 1 $ ou 500 fcfa (ou l'équivalent en monnaie locale) sur son
    compte bookmaker après l'inscription.
@@ -37,12 +37,12 @@ les types de coupons disponibles pour donner envie à l'abonné de rejoindre.
 
 === BOOKMAKERS PARTENAIRES ===
 
-Code promo unique : DJ34X
+Code promo unique : DJ38X
 Ce code DOIT être entré au moment de l'inscription. Il est impossible de l'ajouter
 une fois le compte créé, quelle que soit la raison invoquée.
 
--- WINWIN --
-Lien d'inscription : https://refpa98980.com/L?tag=d_4323546m_94904c_&site=4323546&ad=94904
+-- PARIPESA --
+Lien d'inscription : https://combodef.com/L?tag=d_5958530m_60651c_&site=5958530&ad=60651
 Emplacement du code promo : champ "Code promo" ou "Code bonus" visible avant
   la validation finale du formulaire d'inscription.
 
@@ -59,11 +59,11 @@ Emplacement du code promo : cliquer sur le lien "J'ai un code promo" qui appara�
 
 === GUIDE D'INSCRIPTION ÉTAPE PAR ÉTAPE ===
 
-Étape 1 : Cliquer sur le lien officiel du bookmaker choisi (Winwin, 1xBet ou Melbet).
+Étape 1 : Cliquer sur le lien officiel du bookmaker choisi (PariPesa, 1xBet ou Melbet).
 Étape 2 : Choisir la méthode d'inscription (numéro de téléphone ou e-mail recommandé).
 Étape 3 : Renseigner ses informations personnelles (nom, prénom, date de naissance,
            numéro de téléphone ou e-mail, pays, devise).
-Étape 4 : Entrer le code promo DJ34X dans le champ prévu à cet effet
+Étape 4 : Entrer le code promo DJ38X dans le champ prévu à cet effet
            AVANT de valider le formulaire (voir emplacements ci-dessus).
 Étape 5 : Valider l'inscription et confirmer son compte (SMS ou e-mail de confirmation).
 Étape 6 : Effectuer un dépôt minimum de 1 $ ou 500 fcfa via Mobile Money (MTN, Orange, Moov)
@@ -94,7 +94,7 @@ Emplacement du code promo : cliquer sur le lien "J'ai un code promo" qui appara�
 • 1xBet : le champ "Code promotionnel" se trouve en bas du formulaire,
   faire défiler vers le bas si nécessaire.
 • Melbet : appuyer sur le texte "J'ai un code promo" pour afficher le champ.
-• Winwin : chercher le champ "Code promo" ou "Code bonus" avant de cliquer
+• PariPesa : chercher le champ "Code promo" ou "Code bonus" avant de cliquer
   sur le bouton final de validation.
 Si le champ n'est pas visible, essayer un autre navigateur ou vider le cache.
 
@@ -107,7 +107,7 @@ Si le champ n'est pas visible, essayer un autre navigateur ou vider le cache.
 
 -- Bonus non activé après inscription --
 Causes possibles :
-  - Le code DJ34X n'a pas été entré lors de l'inscription → non corrigible après coup.
+  - Le code DJ38X n'a pas été entré lors de l'inscription → non corrigible après coup.
   - Le montant déposé est insuffisant pour déclencher le bonus (vérifier les conditions).
   - Le compte existait déjà avant cette inscription (le bonus est réservé aux nouveaux comptes).
 Solution : contacter le support du bookmaker en expliquant la situation.
@@ -134,6 +134,6 @@ Si un abonné demande quel bookmaker choisir, recommander 1xBet en priorité :
 - Application mobile disponible
 - Compatible Mobile Money dans la plupart des pays d'Afrique francophone
 
-Winwin et Melbet restent d'excellentes alternatives avec les mêmes conditions
-d'accès (code DJ34X + dépôt minimum 1 $).
+PariPesa et Melbet restent d'excellentes alternatives avec les mêmes conditions
+d'accès (code DJ38X + dépôt minimum 1 $).
 `.trim();
